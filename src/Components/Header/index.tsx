@@ -4,7 +4,7 @@ import * as S from "./style";
 const Header = () => {
   return (
     <S.backgroundHeader>
-      <S.ContainerHeader>
+      <S.containerHeader>
         <S.Logo data-aos="fade-right">&lt; Portifolio &frasl;&gt;</S.Logo>
         <S.nav__block data-aos="fade-left">
           <S.ul__links>
@@ -22,7 +22,7 @@ const Header = () => {
             </li>
           </S.ul__links>
         </S.nav__block>
-      </S.ContainerHeader>
+      </S.containerHeader>
     </S.backgroundHeader>
   );
 };

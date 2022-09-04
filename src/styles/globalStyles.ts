@@ -8,5 +8,7 @@ export const CreateGlobalStyles = createGlobalStyle`
     }
     :root{
         --background: #161616;
-    }
+        --backgroundTwo: #0B0B0B;
+        --backgroundMark:#034A73;
+  }
 `;

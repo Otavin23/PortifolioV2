@@ -11,7 +11,7 @@ export const backgroundHeader = styled.header`
   font-family: "Raleway", sans-serif;
 `;
 
-export const ContainerHeader = styled.div`
+export const containerHeader = styled.div`
   max-width: 1400px;
   width: 85%;
   height: 100%;

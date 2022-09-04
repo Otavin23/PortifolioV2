@@ -104,6 +104,7 @@ export const backgroundSkiils = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 5rem;
 `;
 
 export const containerSkills = styled.div`
@@ -118,7 +119,7 @@ export const skiilName = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 20%;
+  height: 140px;
   h2 {
     color: #ffffff;
     font-family: "Inter", sans-serif;
@@ -141,12 +142,12 @@ export const blockOne = styled.div`
 `;
 
 export const cardsSkiils = styled.div`
-  height: 100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 2.5rem;
+  align-items: center;
+  padding-top: 5rem;
   .block {
     background: #121113;
     display: flex;
@@ -197,7 +198,7 @@ export const cardSkiils = styled.div`
   height: 346px;
   margin-bottom: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   border-bottom: 40px solid transparent;
   border-image-slice: 1;
@@ -224,5 +225,39 @@ export const cardContainer = styled.div`
     line-height: 20px;
     padding-top: 2rem;
     color: #f9f9f9;
+  }
+`;
+
+export const backgroundProjects = styled.section`
+  background: var(--background);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+export const containerProjects = styled.div``;
+
+export const cardImageProjects = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+  flex-wrap: wrap;
+`;
+
+export const imageProjects = styled.picture`
+  img {
+    max-width: 350px;
+    max-height: 350px;
+    height: 230px;
+    width: 350px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+
+    transition: all 0.05s ease;
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.1;
+    }
   }
 `;

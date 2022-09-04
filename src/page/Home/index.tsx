@@ -5,15 +5,28 @@ import * as S from "./styles";
 import "aos/dist/aos.css";
 import Aos from "aos";
 
-import imageHero from "../../assets/hero.png";
-import githubIcon from "../../assets/github.png";
-import linkedinIcon from "../../assets/linkedin.png";
-import html from "../../assets/html 1.png";
-import css__icon from "../../assets/css 1.png";
-import js__icon from "../../assets/js 1.png";
-import react__icon from "../../assets/react 1.png";
-import typescript__icon from "../../assets/ts 1.png";
-import scss__icon from "../../assets/sas 1.png";
+import imageHero from "../../assets/icons/hero.png";
+import githubIcon from "../../assets/icons/github.png";
+import linkedinIcon from "../../assets/icons/linkedin.png";
+import html from "../../assets/icons/html 1.png";
+import css__icon from "../../assets/icons/css 1.png";
+import js__icon from "../../assets/icons/js 1.png";
+import react__icon from "../../assets/icons/react 1.png";
+import typescript__icon from "../../assets/icons/ts 1.png";
+import scss__icon from "../../assets/icons/sas 1.png";
+
+///Imagem projetos
+
+import landinPage from "../../assets/image__projects/landing-page.png";
+import gerenciamento from "../../assets/image__projects/gerenciamento-financeiro.png";
+import ecommerce from "../../assets/image__projects/ecommerce.jpeg";
+import calculadora from "../../assets/image__projects/calculadora.jpeg";
+import githubSearch from "../../assets/image__projects/githubSearch.jpeg";
+import restContries from "../../assets/image__projects/rest-contries.jpeg";
+import todoList from "../../assets/image__projects/todo-list.jpeg";
+import interativo from "../../assets/image__projects/interativo.png";
+import qrcode from "../../assets/image__projects/qr-code.png";
+import article from "../../assets/image__projects/article.jpeg";
 
 const Home = () => {
   useEffect(() => {
@@ -124,6 +137,57 @@ const Home = () => {
           </S.cardsSkiils>
         </S.containerSkills>
       </S.backgroundSkiils>
+
+      <S.backgroundProjects>
+        <S.containerSkills>
+          <S.skiilName>
+            <S.blockOne>02</S.blockOne>
+            <h2>Projects</h2>
+          </S.skiilName>
+
+          <S.cardImageProjects>
+            <S.imageProjects>
+              <img src={landinPage} alt="" />
+            </S.imageProjects>
+
+            <S.imageProjects>
+              <img src={gerenciamento} alt="" />
+            </S.imageProjects>
+
+            <S.imageProjects>
+              <img src={ecommerce} alt="" />
+            </S.imageProjects>
+
+            <S.imageProjects>
+              <img src={calculadora} alt="" />
+            </S.imageProjects>
+
+            <S.imageProjects>
+              <img src={restContries} alt="" />
+            </S.imageProjects>
+
+            <S.imageProjects>
+              <img src={githubSearch} alt="" />
+            </S.imageProjects>
+
+            <S.imageProjects>
+              <img src={todoList} alt="" />
+            </S.imageProjects>
+
+            <S.imageProjects>
+              <img src={interativo} alt="" />
+            </S.imageProjects>
+
+            <S.imageProjects>
+              <img src={qrcode} alt="" />
+            </S.imageProjects>
+
+            <S.imageProjects>
+              <img src={article} alt="" />
+            </S.imageProjects>
+          </S.cardImageProjects>
+        </S.containerSkills>
+      </S.backgroundProjects>
     </>
   );
 };

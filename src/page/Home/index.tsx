@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Header from "../../Components/Header";
+import Footer from "../../Components/Footer";
 
 import * as S from "./styles";
 import "aos/dist/aos.css";
@@ -63,13 +64,14 @@ const Home = () => {
           </S.hero__image>
         </S.containerHero>
       </S.backgroundHero>
+
       <S.backgroundSkiils>
         <S.containerSkills>
           <S.skiilName>
             <S.blockOne>01</S.blockOne>
             <h2>skiils</h2>
           </S.skiilName>
-          <S.cardsSkiils>
+          <S.cardsSkiils data-aos="fade-right">
             <div className="block block--orange">
               <S.cardContainer>
                 <img src={html} alt="" />
@@ -145,7 +147,7 @@ const Home = () => {
             <h2>Projects</h2>
           </S.skiilName>
 
-          <S.cardImageProjects>
+          <S.cardImageProjects data-aos="fade-right">
             <S.imageProjects>
               <img src={landinPage} alt="" />
             </S.imageProjects>
@@ -188,6 +190,8 @@ const Home = () => {
           </S.cardImageProjects>
         </S.containerSkills>
       </S.backgroundProjects>
+
+      <Footer />
     </>
   );
 };

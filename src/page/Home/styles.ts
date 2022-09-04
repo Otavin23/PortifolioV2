@@ -233,6 +233,7 @@ export const backgroundProjects = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
+  padding-bottom: 5rem;
 `;
 
 export const containerProjects = styled.div``;

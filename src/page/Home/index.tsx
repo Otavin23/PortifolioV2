@@ -147,9 +147,7 @@ const Home = () => {
               <S.cardContainer>
                 <img
                   src={scss__icon}
-                  alt="Sass é uma linguagem de folhas de estilo concebida inicialmente por Hampton Catlin e desenvolvida por Natalie Weizenbaum. Depois de suas versões iniciais, Weizenbaum e Chr
-
-"
+                  alt="Sass is a stylesheet language initially conceived by Hampton Catlin and developed by Natalie Weizenbaum. After their initial releases, Weizenbaum and Chr"
                 />
                 <h3>&lt;scss&gt;</h3>
                 <p>

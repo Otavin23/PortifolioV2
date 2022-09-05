@@ -157,7 +157,7 @@ export const cardsSkiils = styled.div`
     width: 300px;
     height: 346px;
     margin-bottom: 2rem;
-    box-shadow: 0px 4px 34px #0a0a0a;
+    border: 2px solid #1c1c1c;
   }
   .block--orange {
     border-bottom: 30px solid #d08513;
@@ -254,11 +254,5 @@ export const imageProjects = styled.picture`
     width: 350px;
     cursor: pointer;
     margin-bottom: 2rem;
-
-    transition: all 0.05s ease;
-    &:hover {
-      transform: scale(1.1);
-      opacity: 0.1;
-    }
   }
 `;

@@ -9,8 +9,8 @@ const Footer = () => {
     <S.backgroundFooter>
       <S.containerFooter>
         <S.picture__iconFooter>
-          <img src={github} alt="" />
-          <img src={linkedin} alt="" />
+          <img src={github} alt="icon github" />
+          <img src={linkedin} alt="icon linkedin" />
         </S.picture__iconFooter>
         <h3>contato.alvesotavio132@gmail.com</h3>
       </S.containerFooter>

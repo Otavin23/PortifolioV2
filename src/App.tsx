@@ -1,13 +1,18 @@
-import React from "react";
 import { CreateGlobalStyles } from "./styles/globalStyles";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Home from "./page/Home";
+import Error from "./page/Error";
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <CreateGlobalStyles />
-      <Home />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 

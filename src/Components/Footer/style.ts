@@ -16,6 +16,7 @@ export const containerFooter = styled.div`
   flex-direction: column;
   justify-content: center;
   h3 {
+    font-family: "Quicksand";
     font-weight: 400;
     opacity: 0.8;
     padding-top: 1rem;

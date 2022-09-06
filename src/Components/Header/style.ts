@@ -8,6 +8,7 @@ export const backgroundHeader = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Raleway", sans-serif;
 `;
 
 export const containerHeader = styled.div`
@@ -21,7 +22,7 @@ export const containerHeader = styled.div`
 
 export const Logo = styled.span`
   color: #969696;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 22px;
 `;
 
@@ -42,7 +43,6 @@ export const ul__links = styled.ul`
     font-size: 18px;
     text-transform: capitalize;
     color: #ffffff;
-    font-weight: 600;
 
     span {
       font-size: 12px;

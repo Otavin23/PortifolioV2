@@ -23,11 +23,9 @@ export const textError = styled.div`
   h2 {
     color: black;
     text-transform: uppercase;
-    font-family: "Archivo Black";
     font-weight: 500;
   }
   span {
-    font-family: "Archivo Black";
     font-size: 10rem;
     color: white;
   }
@@ -37,7 +35,6 @@ export const textError = styled.div`
     background: #d4ac0d;
     width: 100%;
     height: 3.5rem;
-    font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
     color: #17202a;

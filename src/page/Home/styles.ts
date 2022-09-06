@@ -22,9 +22,8 @@ export const hero__information = styled.div`
   flex-direction: column;
   justify-content: center;
   h1 {
-    font-family: "Archivo Black";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 900;
     font-size: 65px;
     line-height: 71px;
     color: #ffffff;
@@ -35,13 +34,12 @@ export const hero__information = styled.div`
       color: #ffffff;
     }
     span {
-      font-family: "Archivo Black", sans-serif;
       color: #8bc7ff;
       font-size: 65px;
     }
   }
   #text__developer {
-    font-family: "Redacted Script";
+    font-family: "Redacted Script", cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 29px;
@@ -54,13 +52,13 @@ export const hero__information = styled.div`
     width: 241px;
     height: 56px;
     border: none;
-    font-family: "Asap", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     background: #034a73;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     color: #ffffff;
     font-size: 23px;
+    cursor: pointer;
   }
 `;
 
@@ -122,7 +120,6 @@ export const skiilName = styled.div`
   height: 140px;
   h2 {
     color: #ffffff;
-    font-family: "Inter", sans-serif;
     font-size: 40px;
     font-weight: 500;
   }
@@ -136,7 +133,6 @@ export const blockOne = styled.div`
   justify-content: center;
   background: var(--backgroundMark);
   color: #ffffff;
-  font-family: "Quicksand", sans-serif;
   font-weight: 600;
   font-size: 24px;
 `;
@@ -209,18 +205,16 @@ export const cardContainer = styled.div`
   width: 90%;
   height: 90%;
   h3 {
-    font-family: "Quicksand";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
 
     font-size: 23px;
     color: #8f5804;
     text-transform: uppercase;
   }
   p {
-    font-family: "Quicksand";
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     padding-top: 2rem;
@@ -235,8 +229,6 @@ export const backgroundProjects = styled.section`
   justify-content: center;
   padding-bottom: 5rem;
 `;
-
-export const containerProjects = styled.div``;
 
 export const cardImageProjects = styled.div`
   width: 100%;

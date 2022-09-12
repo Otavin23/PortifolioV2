@@ -21,6 +21,7 @@ export const containerFooter = styled.div`
     opacity: 0.8;
     padding-top: 1rem;
     color: #ffffff;
+    font-size: clamp(16px, 1.3vw, 25px);
   }
 `;
 

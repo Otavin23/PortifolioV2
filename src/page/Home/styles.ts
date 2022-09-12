@@ -25,8 +25,7 @@ export const hero__information = styled.div`
     font-family: "Archivo Black";
     font-style: normal;
     font-weight: 400;
-    font-size: 65px;
-    line-height: 71px;
+    font-size: clamp(35px, 5vw, 64px);
     color: #ffffff;
     #text__one {
       color: #ffffff;
@@ -37,7 +36,7 @@ export const hero__information = styled.div`
     span {
       font-family: "Archivo Black", sans-serif;
       color: #8bc7ff;
-      font-size: 65px;
+      font-size: clamp(35px, 5vw, 64px);
     }
   }
   #text__developer {
@@ -66,7 +65,6 @@ export const hero__information = styled.div`
 
 export const icon__hero = styled.picture`
   padding-top: 2rem;
-
   img {
     max-width: 40px;
     margin-right: 1rem;
@@ -83,6 +81,7 @@ export const hero__image = styled.picture`
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-name: buttonShadow;
+
   @keyframes buttonShadow {
     0% {
       transform: scale(1);
@@ -94,8 +93,13 @@ export const hero__image = styled.picture`
       transform: scale(1);
     }
   }
+
   img {
     max-width: 100%;
+  }
+
+  @media (max-width: 901px) {
+    display: none;
   }
 `;
 
@@ -159,35 +163,45 @@ export const cardsSkiils = styled.div`
     margin-bottom: 2rem;
     box-shadow: 0 0 1em #0000;
   }
+
   .block--orange {
     border-bottom: 30px solid #d08513;
     h3 {
       color: #d08513;
     }
   }
+
   .block--blue {
     border-bottom: 30px solid #0b8aff;
     h3 {
       color: #0b8aff;
     }
   }
+
   .block--yellow {
     border-bottom: 30px solid #faff00;
     h3 {
       color: #faff00;
     }
   }
+
   .block--blueLight {
     border-bottom: 30px solid #6cb3f4;
     h3 {
       color: #6cb3f4;
     }
   }
+
   .block--red {
     border-bottom: 30px solid #b44848;
     h3 {
       color: #b44848;
     }
+  }
+
+  @media (max-width: 716px) {
+    display: flex;
+    justify-content: center;
   }
 `;
 

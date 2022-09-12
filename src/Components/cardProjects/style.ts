@@ -4,20 +4,29 @@ export const imageProjects = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+
   width: 100%;
-  height: 350px;
+  height: 100%;
   margin-bottom: 4rem;
   img {
     cursor: pointer;
     max-width: 50%;
     height: 100%;
+    @media (max-width: 1115px) {
+      max-width: 100%;
+    }
   }
 `;
 
 export const informationProjects = styled.div`
-  width: 45%;
   height: 100%;
-
+  width: 500px;
+  @media (max-width: 1115px) {
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+  }
   span {
     color: #ffffff;
     font-family: "Inter", sans-serif;

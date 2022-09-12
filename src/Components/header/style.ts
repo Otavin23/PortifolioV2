@@ -40,6 +40,7 @@ export const ul__links = styled.ul`
   width: 100%;
   list-style: none;
   li {
+    margin: 0 1rem 0 0;
     a {
       font-size: 18px;
       text-transform: capitalize;
@@ -50,5 +51,21 @@ export const ul__links = styled.ul`
       font-size: 12px;
       color: #0b8aff;
     }
+  }
+  @media (max-width: 764px) {
+    display: none;
+  }
+`;
+
+export const menu = styled.picture`
+  display: flex;
+  align-items: flex-end;
+  display: none;
+  img {
+    max-width: 30px;
+  }
+  cursor: pointer;
+  @media (max-width: 764px) {
+    display: flex;
   }
 `;

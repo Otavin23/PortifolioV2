@@ -59,12 +59,15 @@ const Home = () => {
             <span id="text__developer">Desenvolvedor front-end</span>
             <button>learn more</button>
             <S.icon__hero>
-              <img src={githubIcon} alt="github icon for" />
-              <img
-                src={linkedinIcon}
-                alt="linkedin icon for
-"
-              />
+              <a href="https://github.com/Otavin23" target="_blank">
+                <img src={githubIcon} alt="github icon for" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/otavio-vieira-84524721a/"
+                target="_blank"
+              >
+                <img src={linkedinIcon} alt="linkedin icon for" />
+              </a>
             </S.icon__hero>
           </S.hero__information>
           <S.hero__image data-aos="fade-left">
@@ -95,6 +98,7 @@ const Home = () => {
                 </p>
               </S.cardContainer>
             </div>
+
             <div className="block block--blue">
               <S.cardContainer>
                 <img

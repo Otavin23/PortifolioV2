@@ -242,8 +242,9 @@ export const cardImageProjects = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-top: 5rem;
+  padding-top: 6rem;
   flex-wrap: wrap;
+  flex-direction: column;
 `;
 
 export const imageProjects = styled.picture`

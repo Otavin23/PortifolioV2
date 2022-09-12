@@ -40,10 +40,12 @@ export const ul__links = styled.ul`
   width: 100%;
   list-style: none;
   li {
-    font-size: 18px;
-    text-transform: capitalize;
-    color: #ffffff;
-
+    a {
+      font-size: 18px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+    }
     span {
       font-size: 12px;
       color: #0b8aff;

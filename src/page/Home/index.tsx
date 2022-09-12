@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import Header from "../../Components/Header";
-import Footer from "../../Components/Footer";
+import Header from "../../Components/header";
+import Footer from "../../Components/footer";
 
 import * as S from "./styles";
 import "aos/dist/aos.css";
@@ -30,6 +30,8 @@ import todoList from "../../assets/image__projects/todo-list.webp";
 import interativo from "../../assets/image__projects/interativo.webp";
 import qrcode from "../../assets/image__projects/qr-code.webp";
 import article from "../../assets/image__projects/article.webp";
+import challenge from "../../assets/image__projects/chall.webp";
+import Cardp from "../../Components/cardProjects";
 
 const Home = () => {
   useEffect(() => {
@@ -38,9 +40,12 @@ const Home = () => {
     });
   }, []);
 
+  console.log(challenge);
+
   return (
     <>
       <Header />
+
       <S.backgroundHero>
         <S.containerHero>
           <S.hero__information data-aos="fade-right">
@@ -77,6 +82,7 @@ const Home = () => {
             <S.blockOne>02</S.blockOne>
             <h2>skiils</h2>
           </S.skiilName>
+
           <S.cardsSkiils data-aos="fade-right">
             <div className="block block--orange">
               <S.cardContainer>
@@ -103,6 +109,7 @@ const Home = () => {
                 </p>
               </S.cardContainer>
             </div>
+
             <div className="block block--yellow">
               <S.cardContainer>
                 <img
@@ -116,6 +123,7 @@ const Home = () => {
                 </p>
               </S.cardContainer>
             </div>
+
             <div className="block block--blueLight">
               <S.cardContainer>
                 <img
@@ -130,6 +138,7 @@ const Home = () => {
                 </p>
               </S.cardContainer>
             </div>
+
             <div className="block block--blueLight">
               <S.cardContainer>
                 <img
@@ -143,6 +152,7 @@ const Home = () => {
                 </p>
               </S.cardContainer>
             </div>
+
             <div className="block block--red">
               <S.cardContainer>
                 <img
@@ -169,77 +179,93 @@ const Home = () => {
           </S.skiilName>
 
           <S.cardImageProjects data-aos="fade-right">
-            <S.imageProjects>
-              <img src={landinPage} alt="delivery landing page" />
-            </S.imageProjects>
+            <Cardp
+              srcc={`${challenge}`}
+              alt={"imagem de um projeto de um site de hamburguer"}
+              titulo={"empire burguer"}
+              tituloSecond={
+                "landing-page king burguer um site de hamburguer focado em deixar uma estrutura agradavel, esse desafio esta disponivel no site br-challenge"
+              }
+              number={"01"}
+              href={"https://br-challenges-empire-burger.vercel.app/"}
+            />
 
-            <S.imageProjects>
-              <img
-                src={gerenciamento}
-                alt="financial management landing page
-"
-              />
-            </S.imageProjects>
+            <Cardp
+              srcc={`${landinPage}`}
+              alt={"image of a fast delivery landing page"}
+              titulo={"landing-page logis"}
+              tituloSecond={
+                "landing-page bem completa, seu parceiro de entrega rapida e relampago desafio."
+              }
+              number={"02"}
+              href={"https://logist-fast-delivery-landing-page.vercel.app/"}
+            />
 
-            <S.imageProjects>
-              <img
-                src={ecommerce}
-                alt="ecommerce snakers
-"
-              />
-            </S.imageProjects>
+            <Cardp
+              srcc={`${gerenciamento}`}
+              alt={
+                "financial management landing page based on a designer provided by figma"
+              }
+              titulo={"landing-page logis"}
+              tituloSecond={
+                "landing-page de gerenciamento financeiro, designer fornecido pelo figma usei como base."
+              }
+              number={"03"}
+              href={"https://gerenciamento-financeiro-landing-page.vercel.app/"}
+            />
 
-            <S.imageProjects>
-              <img
-                src={calculadora}
-                alt="challenge calculator
-"
-              />
-            </S.imageProjects>
+            <Cardp
+              srcc={`${calculadora}`}
+              alt={"image of a calculator"}
+              titulo={"calculadora"}
+              tituloSecond={
+                "calculadora bem pratica, desafio do front-end mentor"
+              }
+              number={"04"}
+              href={"https://tiny-sopapillas-c14523.netlify.app/"}
+            />
 
-            <S.imageProjects>
-              <img
-                src={restContries}
-                alt="where is my country project
-"
-              />
-            </S.imageProjects>
+            <Cardp
+              srcc={`${githubSearch}`}
+              alt={"desafio feito para achar pessoas do github pelo nome"}
+              titulo={"pesquisa github"}
+              tituloSecond={
+                "desafio feito para achar pessoas do github pelo nome, usando api fornecida pelo github"
+              }
+              number={"05"}
+              href={"https://eloquent-johnson-973322.netlify.app/"}
+            />
 
-            <S.imageProjects>
-              <img
-                src={githubSearch}
-                alt="github project user search
-"
-              />
-            </S.imageProjects>
+            <Cardp
+              srcc={`${todoList}`}
+              alt={"image task management"}
+              titulo={"Tarefa todo list"}
+              tituloSecond={"gerenciador de tarefa, diaria todo-list"}
+              href={"https://fervent-yalow-13b8a0.netlify.app/"}
+              number={"06"}
+            />
 
-            <S.imageProjects>
-              <img
-                src={todoList}
-                alt="project task management
-"
-              />
-            </S.imageProjects>
+            <Cardp
+              srcc={`${interativo}`}
+              alt={"image of text with several buttons"}
+              titulo={"Interativo"}
+              tituloSecond={
+                "a cada clique no numero ele vai interagir com o botão e levar para um modal de baixo desse que esta oculto"
+              }
+              number={"07"}
+              href={"https://interactive-rating-component-tan-six.vercel.app/"}
+            />
 
-            <S.imageProjects>
-              <img src={interativo} alt="challenge" />
-            </S.imageProjects>
-
-            <S.imageProjects>
-              <img
-                src={qrcode}
-                alt="qr code challenge
-"
-              />
-            </S.imageProjects>
-
-            <S.imageProjects>
-              <img
-                src={article}
-                alt="text article
-"
-              />
-            </S.imageProjects>
+            <Cardp
+              srcc={`${restContries}`}
+              alt={"image of a website to locate the country and learn more"}
+              titulo={"procura pais"}
+              tituloSecond={
+                "procura pais e fornece infomações do pais desejado, precisa de ajustes"
+              }
+              href={"https://eager-poincare-e5ad84.netlify.app/"}
+              number={"08"}
+            />
           </S.cardImageProjects>
         </S.containerSkills>
       </S.backgroundProjects>

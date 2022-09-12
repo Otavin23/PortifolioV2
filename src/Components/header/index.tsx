@@ -9,16 +9,22 @@ const Header = () => {
         <S.nav__block data-aos="fade-left">
           <S.ul__links>
             <li>
-              <span>01.</span>
-              home
+              <a href="#">
+                <span>01.</span>
+                home
+              </a>
             </li>
             <li>
-              <span>02.</span>
-              Skiils
+              <a href="#">
+                <span>02.</span>
+                Skiils
+              </a>
             </li>
             <li>
-              <span>03.</span>
-              Projects
+              <a href="#">
+                <span>03.</span>
+                Projects
+              </a>
             </li>
           </S.ul__links>
         </S.nav__block>

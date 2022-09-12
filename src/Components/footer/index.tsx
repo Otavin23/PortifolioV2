@@ -9,11 +9,22 @@ const Footer = () => {
     <S.backgroundFooter>
       <S.containerFooter>
         <S.picture__iconFooter>
-          <img src={github} alt="icon github" />
-          <img src={linkedin} alt="icon linkedin" />
+          <a href="https://github.com/Otavin23" rel="noopener" target="_blank">
+            <img src={github} alt="icon github" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/otavio-vieira-84524721a/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src={linkedin} alt="icon linkedin" />
+          </a>
         </S.picture__iconFooter>
 
-        <h3>contato.alvesotavio132@gmail.com</h3>
+        <a href="mailto:contato.alvesotavio132@gmail.com?subject=mensagem">
+          contato.alvesotavio132@gmail.com
+        </a>
       </S.containerFooter>
     </S.backgroundFooter>
   );

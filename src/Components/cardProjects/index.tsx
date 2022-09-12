@@ -19,7 +19,7 @@ const cardProjects = (props: {
         </span>
         <p>{props.tituloSecond}</p>
         <button>
-          <a target="_blank" href={`${props.href}`}>
+          <a target="_blank" rel="noopener" href={`${props.href}`}>
             preview site
           </a>
         </button>

@@ -59,12 +59,17 @@ const Home = () => {
             <span id="text__developer">Desenvolvedor front-end</span>
             <button>learn more</button>
             <S.icon__hero>
-              <a href="https://github.com/Otavin23" target="_blank">
+              <a
+                href="https://github.com/Otavin23"
+                target="_blank"
+                rel="noopener"
+              >
                 <img src={githubIcon} alt="github icon for" />
               </a>
               <a
                 href="https://www.linkedin.com/in/otavio-vieira-84524721a/"
                 target="_blank"
+                rel="noopener"
               >
                 <img src={linkedinIcon} alt="linkedin icon for" />
               </a>

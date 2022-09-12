@@ -23,11 +23,11 @@ const Footer = () => {
         </S.picture__iconFooter>
 
         <a
-          href="mailto:contato.alvesotavio132@gmail.com"
+          href="mailto:contato.alvesotavio132@.gmail.com"
           rel="noopener"
           target="_blank"
         >
-          contato.alvesotavio132@gmail.com
+          <del>contato.alvesotavio132@gmail.com</del>
         </a>
       </S.containerFooter>
     </S.backgroundFooter>

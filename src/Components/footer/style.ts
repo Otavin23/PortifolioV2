@@ -24,6 +24,9 @@ export const containerFooter = styled.div`
     font-size: clamp(16px, 1.3vw, 25px);
     text-decoration: none;
   }
+  del {
+    text-decoration: none;
+  }
 `;
 
 export const picture__iconFooter = styled.picture`

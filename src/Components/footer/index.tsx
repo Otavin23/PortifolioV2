@@ -22,7 +22,11 @@ const Footer = () => {
           </a>
         </S.picture__iconFooter>
 
-        <a href="mailto:contato.alvesotavio132@gmail.com?subject=mensagem">
+        <a
+          href="mailto:contato.alvesotavio132@gmail.com"
+          rel="noopener"
+          target="_blank"
+        >
           contato.alvesotavio132@gmail.com
         </a>
       </S.containerFooter>

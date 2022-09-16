@@ -11,8 +11,13 @@ const cardProjects = (props: {
   href: string;
 }) => {
   return (
-    <S.imageProjects>
-      <img src={props.srcc || undefined} alt={props.alt || undefined} />
+    <S.imageProjects data-aos="zoom-in">
+      <img
+        width="500px"
+        height="100%"
+        src={props.srcc || undefined}
+        alt={props.alt || undefined}
+      />
 
       <S.informationProjects>
         <S.images__links>

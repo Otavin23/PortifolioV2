@@ -7,10 +7,10 @@ export const imageProjects = styled.div`
   height: 290px;
   margin-bottom: 4rem;
   background: var(--backgrounProject);
+
   img {
+    object-fit: cover;
     cursor: pointer;
-    max-width: 50%;
-    height: 100%;
   }
   @media (max-width: 1115px) {
     flex-wrap: wrap;

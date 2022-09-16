@@ -168,7 +168,7 @@ export const skillNames = styled.div`
     border: none;
     border-left: 6px solid #78ff00;
     font-weight: 450;
-    font-size: 16px;
+    font-size: clamp(12px, 1.5vw, 16px);
     color: #78ff00;
   }
 `;

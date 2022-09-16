@@ -38,7 +38,7 @@ import polygon from "../../assets/Polygon.webp";
 const Home = () => {
   useEffect(() => {
     Aos.init({
-      duration: 2000,
+      duration: 1000,
     });
   }, []);
 
@@ -48,7 +48,7 @@ const Home = () => {
     <>
       <Header />
 
-      <S.backgroundHero>
+      <S.backgroundHero data-aos="fade-right">
         <S.containerHero>
           <S.hero__information>
             <h1>
@@ -165,7 +165,7 @@ const Home = () => {
         </S.containerSkills>
       </S.backgroundSkiils>
 
-      <S.backgroundProjects>
+      <S.backgroundProjects data-aos="fade-right">
         <S.containerSkills>
           <S.skiilName>
             <h2>
@@ -181,58 +181,58 @@ const Home = () => {
               <ul>
                 <li>
                   <picture>
-                    <img src={polygon} alt="" />
+                    <img src={polygon} alt="polygon" />
                   </picture>
                   html
                 </li>
 
                 <li>
                   <picture>
-                    <img src={polygon} alt="" />
+                    <img src={polygon} alt="polygon" />
                   </picture>
                   css
                 </li>
 
                 <li>
                   <picture>
-                    <img src={polygon} alt="" />
+                    <img src={polygon} alt="polygon" />
                   </picture>
                   scss
                 </li>
 
                 <li>
                   <picture>
-                    <img src={polygon} alt="" />
+                    <img src={polygon} alt="polygon" />
                   </picture>
                   javascript
                 </li>
                 <li>
                   <picture>
-                    <img src={polygon} alt="" />
+                    <img src={polygon} alt="polygon" />
                   </picture>
                   react.js
                 </li>
                 <li>
                   <picture>
-                    <img src={polygon} alt="" />
+                    <img src={polygon} alt="polygon" />
                   </picture>
                   styled-components
                 </li>
                 <li>
                   <picture>
-                    <img src={polygon} alt="" />
+                    <img src={polygon} alt="polygon" />
                   </picture>
                   typescript
                 </li>
                 <li>
                   <picture>
-                    <img src={polygon} alt="" />
+                    <img src={polygon} alt="polygon" />
                   </picture>
                   next.js
                 </li>
                 <li>
                   <picture>
-                    <img src={polygon} alt="" />
+                    <img src={polygon} alt="polygon" />
                   </picture>
                   figma
                 </li>

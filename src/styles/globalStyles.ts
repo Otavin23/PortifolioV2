@@ -20,7 +20,7 @@ export const CreateGlobalStyles = createGlobalStyle`
     body{
         background: var(--background-primary);
 
-        animation-duration: 1s;
+    /*animation-duration: 1s;
         animation-name: opacityMain;
 
         @keyframes opacityMain {
@@ -34,6 +34,7 @@ export const CreateGlobalStyles = createGlobalStyle`
                 opacity: 1;
             }
         }
+    */
 
     }
     

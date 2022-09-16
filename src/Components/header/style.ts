@@ -2,15 +2,19 @@ import styled from "styled-components";
 
 export const backgroundHeader = styled.header`
   width: 100%;
-  height: 4rem;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Fira Code", monospace;
+  backdrop-filter: blur(12px);
   position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 99;
   backdrop-filter: blur(12px);
 `;
-
 export const containerHeader = styled.div`
   max-width: 1400px;
   width: 75%;

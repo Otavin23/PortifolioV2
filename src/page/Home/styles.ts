@@ -1,105 +1,75 @@
 import styled from "styled-components";
 
 export const backgroundHero = styled.section`
-  background: var(--background);
-  height: 100vh;
+  background: var(--background-primary);
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 80vh;
 `;
 
 export const containerHero = styled.div`
   max-width: 1400px;
-  width: 85%;
+  width: 75%;
   height: 85%;
   display: flex;
   justify-content: space-between;
 `;
 
 export const hero__information = styled.div`
-  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   h1 {
-    font-family: "Archivo Black";
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(35px, 5vw, 64px);
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 41px;
     color: #ffffff;
-    #text__one {
-      color: #ffffff;
-    }
-    #text__end {
-      color: #ffffff;
-    }
-    span {
-      font-family: "Archivo Black", sans-serif;
-      color: #8bc7ff;
-      font-size: clamp(35px, 5vw, 64px);
-    }
+    display: flex;
+    flex-direction: column;
   }
-  #text__developer {
-    font-family: "Redacted Script";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 29px;
-    line-height: 29px;
-    color: #ffffff;
-    opacity: 0.5;
-  }
-  button {
-    margin-top: 2rem;
-    width: 241px;
-    height: 56px;
-    border: none;
-    font-family: "Asap", sans-serif;
-    font-weight: 500;
-    background: #034a73;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
-    color: #ffffff;
-    font-size: 23px;
+
+  p {
+    padding-top: 1.5rem;
+    font-family: "Fira Code", monospace;
+    color: var(--grayColor);
+    font-weight: 600;
+    max-width: 490px;
+    font-size: 14px;
+    .green-text {
+      color: var(--greenColor);
+    }
   }
 `;
 
-export const icon__hero = styled.picture`
-  padding-top: 2rem;
-  img {
-    max-width: 40px;
-    margin-right: 1rem;
+export const button__nav = styled.nav`
+  width: 85%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 1.5rem 0 0 0;
+  button {
+    width: 152px;
+    height: 53px;
+    font-family: "Inter", sans-serif;
+    border-radius: 11px;
+    font-size: 15px;
+    color: #ffff;
     cursor: pointer;
   }
-`;
-
-export const hero__image = styled.picture`
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  width: 50%;
-  padding-top: 2rem;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-name: buttonShadow;
-
-  @keyframes buttonShadow {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
+  .button-green {
+    background: var(--greenColor);
+    border: 1px solid var(--greenColor);
+    box-shadow: 0px 4px 56px var(--greenColor);
+    font-weight: 600;
+    // margin: 0 1rem 0 0rem;
   }
-
-  img {
-    max-width: 100%;
-  }
-
-  @media (max-width: 901px) {
-    display: none;
+  .button-gray {
+    background: var(--button-gray);
+    border: none;
+    font-weight: 500;
+    // margin: 0 1rem 0 0rem;
   }
 `;
 
@@ -108,114 +78,55 @@ export const backgroundSkiils = styled.section`
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 5rem;
+  padding: 0 0 10rem 0;
 `;
 
 export const containerSkills = styled.div`
   max-width: 1400px;
-  width: 85%;
+  width: 75%;
   height: 80%;
 `;
 
 export const skiilName = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 140px;
-  h2 {
-    color: #ffffff;
-    font-family: "Inter", sans-serif;
-    font-size: 40px;
-    font-weight: 500;
-  }
-`;
-
-export const blockOne = styled.div`
-  width: 169px;
-  height: 50px;
+  height: 4.5rem;
+  font-family: "Inter", sans-serif;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: var(--backgroundMark);
-  color: #ffffff;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 600;
-  font-size: 24px;
+
+  h2 {
+    font-weight: 500;
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: capitalize;
+    span {
+      align-items: end;
+      color: var(--greenColor);
+      font-size: 23px;
+    }
+  }
+
+  .hr-line {
+    margin: 0 0rem 0 1rem;
+    width: 50%;
+    height: 0.2rem;
+    background: #717171;
+  }
 `;
 
 export const cardsSkiils = styled.div`
   width: 100%;
+  padding-top: 5rem;
+  background: red;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
-  padding-top: 5rem;
-  .block {
-    background: #121113;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 1.5rem;
-    width: 300px;
-    height: 346px;
-    margin-bottom: 2rem;
-    box-shadow: 0 0 1em #0000;
-  }
-
-  .block--orange {
-    border-bottom: 30px solid #d08513;
-    h3 {
-      color: #d08513;
-    }
-  }
-
-  .block--blue {
-    border-bottom: 30px solid #0b8aff;
-    h3 {
-      color: #0b8aff;
-    }
-  }
-
-  .block--yellow {
-    border-bottom: 30px solid #faff00;
-    h3 {
-      color: #faff00;
-    }
-  }
-
-  .block--blueLight {
-    border-bottom: 30px solid #6cb3f4;
-    h3 {
-      color: #6cb3f4;
-    }
-  }
-
-  .block--red {
-    border-bottom: 30px solid #b44848;
-    h3 {
-      color: #b44848;
-    }
-  }
 
   @media (max-width: 716px) {
     display: flex;
     justify-content: center;
   }
-`;
-
-export const cardSkiils = styled.div`
-  background: #121113;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
-  width: 300px;
-  height: 346px;
-  margin-bottom: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 40px solid transparent;
-  border-image-slice: 1;
 `;
 
 export const cardContainer = styled.div`
@@ -276,4 +187,21 @@ export const imageProjects = styled.picture`
       opacity: 0.1;
     }
   }
+`;
+
+export const skillNames = styled.div`
+  display: flex;
+  align-items: flex-start;
+  margin: 3rem 0 0 0;
+  button {
+    width: 162px;
+    height: 56px;
+    background: rgba(183, 254, 120, 0.22);
+    border: none;
+    border-left: 4px solid #78ff00;
+  }
+`;
+
+export const skillsNav = styled.nav`
+  background: yellow;
 `;

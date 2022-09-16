@@ -3,12 +3,10 @@ import styled from "styled-components";
 export const imageProjects = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  width: 100%;
-  height: 100%;
+  width: 890px;
+  height: 290px;
   margin-bottom: 4rem;
+  background: var(--backgrounProject);
   img {
     cursor: pointer;
     max-width: 50%;
@@ -19,53 +17,65 @@ export const imageProjects = styled.div`
   }
 `;
 
+export const images__links = styled.picture`
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+  margin: 0 0 1rem 0;
+`;
+
+export const images__nav = styled.picture`
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  img {
+    max-width: 30px;
+    max-height: 30px;
+  }
+`;
+
 export const informationProjects = styled.div`
-  height: 100%;
-  width: 500px;
+  width: 350px;
+  margin: 0 0 0 2rem;
   @media (max-width: 1115px) {
     width: 100%;
     text-align: center;
     padding-top: 2rem;
   }
   span {
-    color: #ffffff;
     font-family: "Inter", sans-serif;
-    font-size: clamp(15px, 3vw, 30px);
     font-weight: 500;
-    text-transform: capitalize;
-    #indicator {
-      font-size: 20px;
-      color: #0b8aff;
-    }
+    font-size: 20px;
+    color: #ffffff;
   }
-
   p {
-    font-family: "Quicksand";
-    font-style: normal;
+    margin-top: 1rem;
+    color: #969696;
+    font-family: "Fira Code";
     font-weight: 400;
-    padding-top: 2rem;
-    color: #f9f9f9;
+    font-size: 15px;
   }
   button {
-    margin-top: 2rem;
-    width: 241px;
-    height: 56px;
+    font-family: "Fira Code";
+    font-size: 16px;
     border: none;
-    font-family: "Asap", sans-serif;
-    font-weight: 500;
-    background: #034a73;
-    border-radius: 0.5rem;
-    transition: all 0.05s ease;
+    font-weight: 700;
+    width: 130px;
+    height: 32px;
+    background: #6da13f;
+    border-radius: 8px;
+    color: #ffffff;
+    text-transform: uppercase;
     cursor: pointer;
-
-    a {
-      text-transform: capitalize;
-      font-size: clamp(15px, 1.5vw, 30px);
-      text-decoration: none;
-      color: #ffffff;
-    }
-    &:hover {
-      transform: scale(1.1);
-    }
   }
+`;
+
+export const alignButton = styled.div`
+  margin: 1rem 0 0 0;
+  text-align: center;
 `;

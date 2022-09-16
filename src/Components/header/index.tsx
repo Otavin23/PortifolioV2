@@ -6,29 +6,31 @@ const Header = () => {
   return (
     <S.backgroundHeader>
       <S.containerHeader>
-        <S.Logo data-aos="fade-right">&lt; Portifolio &frasl;&gt;</S.Logo>
+        <S.Logo>otavio</S.Logo>
 
-        <S.nav__block data-aos="fade-left">
+        <S.nav__block>
           <S.ul__links>
             <li>
               <a href="#">
-                <span>01.</span>
+                <span>00. </span>
                 home
               </a>
             </li>
             <li>
               <a href="#">
-                <span>02.</span>
-                Skiils
+                <span>02. </span>
+                projetos
               </a>
             </li>
             <li>
               <a href="#">
-                <span>03.</span>
-                Projects
+                <span>03. </span>
+                experiencias
               </a>
             </li>
           </S.ul__links>
+
+          <button>check github</button>
         </S.nav__block>
 
         <S.menu>

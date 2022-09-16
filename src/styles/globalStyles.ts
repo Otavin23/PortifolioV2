@@ -1,12 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-/*
-
-font-family: 'Fira Code', monospace;
-font-family: 'Inter', sans-serif;
-;borda botão da hero, #484848 
-*/
-
 export const CreateGlobalStyles = createGlobalStyle` 
     
     *{
@@ -26,18 +19,33 @@ export const CreateGlobalStyles = createGlobalStyle`
 
     body{
         background: var(--background-primary);
+
+        animation-duration: 1s;
+        animation-name: opacityMain;
+
+        @keyframes opacityMain {
+            0%{
+                opacity: 0.1;
+            }
+            50%{
+                opacity: 0.1;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
     }
     
     ::-webkit-scrollbar {
-        width:10px;
-        height: 10px;
+        width:1px;
     }
     
     ::-webkit-scrollbar-track {
-        background:#333;
+        background:transparent;
     }
     
     ::-webkit-scrollbar-thumb {
-        background: #2e9dd8;
+        background: #6DA13F;
     }
 `;

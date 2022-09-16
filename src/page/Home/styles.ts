@@ -159,6 +159,7 @@ export const backgroundProjects = styled.section`
   display: flex;
   justify-content: center;
   padding-bottom: 5rem;
+  padding: 0 0 5rem 0;
 `;
 
 export const containerProjects = styled.div``;
@@ -194,14 +195,43 @@ export const skillNames = styled.div`
   align-items: flex-start;
   margin: 3rem 0 0 0;
   button {
+    font-family: "Fira Code";
     width: 162px;
     height: 56px;
     background: rgba(183, 254, 120, 0.22);
     border: none;
-    border-left: 4px solid #78ff00;
+    border-left: 6px solid #78ff00;
+    font-weight: 450;
+    font-size: 16px;
+    color: #78ff00;
   }
 `;
 
 export const skillsNav = styled.nav`
-  background: yellow;
+  margin: 0 0 0 3rem;
+  span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+
+    color: #78ff00;
+  }
+  ul {
+    margin: 1rem 0 0 0;
+    list-style: none;
+    font-family: "Fira Code";
+    font-style: normal;
+    font-weight: 450;
+    font-size: 17px;
+    line-height: 22px;
+    color: #969696;
+    li {
+      margin: 1rem 0 0 0;
+    }
+    img {
+      margin: 0 1rem 0 0;
+    }
+  }
 `;

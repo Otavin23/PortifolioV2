@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export const backgroundHeader = styled.header`
-  background: var(--backgroundSecondary);
   width: 100%;
   height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Fira Code", monospace;
+  position: fixed;
+  backdrop-filter: blur(12px);
 `;
 
 export const containerHeader = styled.div`

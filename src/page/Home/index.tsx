@@ -33,6 +33,8 @@ import article from "../../assets/image__projects/article.webp";
 import challenge from "../../assets/image__projects/chall.webp";
 import Cardp from "../../Components/cardProjects";
 
+import polygon from "../../assets/Polygon.webp";
+
 const Home = () => {
   useEffect(() => {
     Aos.init({
@@ -178,28 +180,61 @@ const Home = () => {
               <span>habilidades</span>
               <ul>
                 <li>
-                  <span></span>
+                  <picture>
+                    <img src={polygon} alt="" />
+                  </picture>
                   html
                 </li>
+
                 <li>
-                  <span></span>
-                  html
+                  <picture>
+                    <img src={polygon} alt="" />
+                  </picture>
+                  css
+                </li>
+
+                <li>
+                  <picture>
+                    <img src={polygon} alt="" />
+                  </picture>
+                  scss
+                </li>
+
+                <li>
+                  <picture>
+                    <img src={polygon} alt="" />
+                  </picture>
+                  javascript
                 </li>
                 <li>
-                  <span></span>
-                  html
+                  <picture>
+                    <img src={polygon} alt="" />
+                  </picture>
+                  react.js
                 </li>
                 <li>
-                  <span></span>
-                  html
+                  <picture>
+                    <img src={polygon} alt="" />
+                  </picture>
+                  styled-components
                 </li>
                 <li>
-                  <span></span>
-                  html
+                  <picture>
+                    <img src={polygon} alt="" />
+                  </picture>
+                  typescript
                 </li>
                 <li>
-                  <span></span>
-                  html
+                  <picture>
+                    <img src={polygon} alt="" />
+                  </picture>
+                  next.js
+                </li>
+                <li>
+                  <picture>
+                    <img src={polygon} alt="" />
+                  </picture>
+                  figma
                 </li>
               </ul>
             </S.skillsNav>

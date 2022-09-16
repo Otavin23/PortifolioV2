@@ -64,12 +64,17 @@ const Home = () => {
             </p>
             <S.button__nav>
               <button className="button-green">Learn more</button>
-              <a href="https://github.com/Otavin23" target="_blank">
+              <a
+                href="https://github.com/Otavin23"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button className="button-gray">View github</button>
               </a>
               <a
                 href="https://www.linkedin.com/in/otavio-vieira-84524721a/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <button className="button-gray">View Linkedin</button>
               </a>

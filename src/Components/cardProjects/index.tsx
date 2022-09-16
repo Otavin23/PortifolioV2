@@ -30,7 +30,7 @@ const cardProjects = (props: {
         <span>{props.titulo}</span>
         <p>{props.tituloSecond}</p>
         <S.alignButton>
-          <a href={`${props.href}`} target="_blank">
+          <a href={`${props.href}`} target="_blank" rel="noreferrer">
             <button>preview site</button>
           </a>
         </S.alignButton>

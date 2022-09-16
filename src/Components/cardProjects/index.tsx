@@ -21,16 +21,18 @@ const cardProjects = (props: {
 
       <S.informationProjects>
         <S.images__links>
-          <img src={paste} alt="" />
+          <img src={paste} alt="image file" />
           <S.images__nav>
-            <img src={github} alt="" />
-            <img src={live} alt="" />
+            <img src={github} alt="image github" />
+            <img src={live} alt="image icon live brodcast" />
           </S.images__nav>
         </S.images__links>
         <span>{props.titulo}</span>
         <p>{props.tituloSecond}</p>
         <S.alignButton>
-          <button>preview site</button>
+          <a href={`${props.href}`} target="_blank">
+            <button>preview site</button>
+          </a>
         </S.alignButton>
       </S.informationProjects>
     </S.imageProjects>

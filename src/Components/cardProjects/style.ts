@@ -10,7 +10,6 @@ export const imageProjects = styled.div`
 
   img {
     object-fit: cover;
-    cursor: pointer;
   }
   @media (max-width: 1115px) {
     flex-wrap: wrap;

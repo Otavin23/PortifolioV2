@@ -58,6 +58,9 @@ export const button__nav = styled.nav`
     color: #ffff;
     cursor: pointer;
     margin: 0 0 1rem 0;
+    &:hover {
+      opacity: 0.6;
+    }
   }
   .button-green {
     background: var(--greenColor);

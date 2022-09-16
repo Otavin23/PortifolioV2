@@ -39,6 +39,7 @@ export const CreateGlobalStyles = createGlobalStyle`
     
     ::-webkit-scrollbar {
         width:1px;
+        height: 10px;
     }
     
     ::-webkit-scrollbar-track {
@@ -46,6 +47,6 @@ export const CreateGlobalStyles = createGlobalStyle`
     }
     
     ::-webkit-scrollbar-thumb {
-        background: #6DA13F;
+        background: #3a3a3a;
     }
 `;

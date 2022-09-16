@@ -11,11 +11,14 @@ export const backgroundFooter = styled.footer`
 export const containerFooter = styled.div`
   max-width: 1400px;
   width: 75%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   span {
+    text-align: center;
     font-family: "Fira Code";
     font-weight: 500;
-    font-size: 15px;
+    font-size: clamp(14px, 1vw, 15px);
 
     color: #b1b1b1;
   }

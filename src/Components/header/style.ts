@@ -31,7 +31,6 @@ export const nav__block = styled.nav`
   align-items: center;
   justify-content: space-between;
   font-family: "Fira Code", monospace;
-
   width: 55%;
   button {
     border: none;
@@ -47,6 +46,9 @@ export const nav__block = styled.nav`
     border-radius: 2px;
     cursor: pointer;
   }
+  @media (max-width: 764px) {
+    display: none;
+  }
 `;
 
 export const ul__links = styled.ul`
@@ -54,10 +56,11 @@ export const ul__links = styled.ul`
   justify-content: space-between;
   list-style: none;
   width: 70%;
+
   li {
     margin: 0 1rem 0 0;
     a {
-      font-size: 14px;
+      font-size: clamp(10px, 1vw, 14px);
       text-transform: capitalize;
       color: #ffffff;
       text-decoration: none;
@@ -66,9 +69,6 @@ export const ul__links = styled.ul`
       color: var(--greenColor);
     }
   }
-  @media (max-width: 764px) {
-    display: none;
-  }
 `;
 
 export const menu = styled.picture`
@@ -76,7 +76,7 @@ export const menu = styled.picture`
   align-items: flex-end;
   display: none;
   img {
-    max-width: 30px;
+    max-width: 25px;
   }
   cursor: pointer;
   @media (max-width: 764px) {

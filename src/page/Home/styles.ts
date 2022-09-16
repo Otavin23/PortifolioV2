@@ -24,7 +24,7 @@ export const hero__information = styled.div`
   h1 {
     font-family: "Inter", sans-serif;
     font-weight: 800;
-    font-size: 41px;
+    font-size: clamp(18px, 3vw, 41px);
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -57,19 +57,23 @@ export const button__nav = styled.nav`
     font-size: 15px;
     color: #ffff;
     cursor: pointer;
+    margin: 0 0 1rem 0;
   }
   .button-green {
     background: var(--greenColor);
     border: 1px solid var(--greenColor);
     box-shadow: 0px 4px 56px var(--greenColor);
     font-weight: 600;
-    // margin: 0 1rem 0 0rem;
   }
   .button-gray {
     background: var(--button-gray);
     border: none;
     font-weight: 500;
     // margin: 0 1rem 0 0rem;
+  }
+  @media (max-width: 1115px) {
+    width: 100%;
+    flex-wrap: wrap;
   }
 `;
 
@@ -97,13 +101,13 @@ export const skiilName = styled.div`
 
   h2 {
     font-weight: 500;
-    font-size: 40px;
+    font-size: clamp(18px, 2vw, 40px);
     color: #ffffff;
     text-transform: capitalize;
     span {
       align-items: end;
       color: var(--greenColor);
-      font-size: 23px;
+      font-size: clamp(15px, 1vw, 23px);
     }
   }
 
@@ -129,30 +133,6 @@ export const cardsSkiils = styled.div`
   }
 `;
 
-export const cardContainer = styled.div`
-  height: 100%;
-  width: 90%;
-  height: 90%;
-  h3 {
-    font-family: "Quicksand";
-    font-style: normal;
-    font-weight: 700;
-
-    font-size: 23px;
-    color: #8f5804;
-    text-transform: uppercase;
-  }
-  p {
-    font-family: "Quicksand";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    padding-top: 2rem;
-    color: #f9f9f9;
-  }
-`;
-
 export const backgroundProjects = styled.section`
   background: var(--background);
   width: 100%;
@@ -173,27 +153,13 @@ export const cardImageProjects = styled.div`
   flex-direction: column;
 `;
 
-export const imageProjects = styled.picture`
-  img {
-    max-width: 350px;
-    max-height: 350px;
-    height: 230px;
-    width: 350px;
-    cursor: pointer;
-    margin-bottom: 2rem;
-
-    transition: all 0.05s ease;
-    &:hover {
-      transform: scale(1.1);
-      opacity: 0.1;
-    }
-  }
-`;
-
 export const skillNames = styled.div`
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 3rem 0 0 0;
+  width: 40%;
   button {
     font-family: "Fira Code";
     width: 162px;
@@ -208,7 +174,9 @@ export const skillNames = styled.div`
 `;
 
 export const skillsNav = styled.nav`
-  margin: 0 0 0 3rem;
+  @media (max-width: 1115px) {
+    margin: 2rem 0 0 0;
+  }
   span {
     font-family: "Inter";
     font-style: normal;
@@ -219,7 +187,7 @@ export const skillsNav = styled.nav`
     color: #78ff00;
   }
   ul {
-    margin: 1rem 0 0 0;
+    margin: 2.5rem 0 0 0;
     list-style: none;
     font-family: "Fira Code";
     font-style: normal;

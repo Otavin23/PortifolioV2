@@ -11,7 +11,14 @@ export const imageProjects = styled.div`
     cursor: pointer;
     max-width: 50%;
     height: 100%;
-    @media (max-width: 1115px) {
+  }
+  @media (max-width: 1115px) {
+    flex-wrap: wrap;
+    height: 0%;
+    width: 100%;
+  }
+  @media (max-width: 1115px) {
+    img {
       max-width: 100%;
     }
   }
@@ -22,6 +29,7 @@ export const images__links = styled.picture`
   height: 20%;
   display: flex;
   justify-content: space-between;
+
   img {
     max-width: 30px;
     max-height: 30px;
@@ -30,29 +38,30 @@ export const images__links = styled.picture`
 `;
 
 export const images__nav = styled.picture`
-  width: 20%;
   display: flex;
   justify-content: space-between;
+  margin: 0 2rem 0 0;
+
   img {
     max-width: 30px;
     max-height: 30px;
+    margin: 0 1rem 0 0;
+  }
+  @media (max-width: 1115px) {
   }
 `;
 
 export const informationProjects = styled.div`
   width: 350px;
-  margin: 0 0 0 2rem;
-  @media (max-width: 1115px) {
-    width: 100%;
-    text-align: center;
-    padding-top: 2rem;
-  }
+  margin: 0 1rem 0 1rem;
+
   span {
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: #ffffff;
   }
+
   p {
     margin-top: 1rem;
     color: #969696;
@@ -60,6 +69,7 @@ export const informationProjects = styled.div`
     font-weight: 400;
     font-size: 15px;
   }
+
   button {
     font-family: "Fira Code";
     font-size: 16px;
@@ -72,6 +82,17 @@ export const informationProjects = styled.div`
     color: #ffffff;
     text-transform: uppercase;
     cursor: pointer;
+  }
+
+  @media (max-width: 1115px) {
+    padding-top: 2rem;
+    width: 90%;
+  }
+
+  @media (max-width: 1115px) {
+    button {
+      margin: 0 0 1rem 0;
+    }
   }
 `;
 

@@ -50,6 +50,20 @@ export const images__nav = styled.picture`
   }
 `;
 
+export const imageResponsive = styled.picture`
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: 1115px) {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+`;
+
 export const informationProjects = styled.div`
   width: 350px;
   margin: 0 1rem 0 1rem;

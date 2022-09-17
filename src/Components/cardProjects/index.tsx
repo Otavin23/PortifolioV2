@@ -5,19 +5,31 @@ import live from "../../assets/live.webp";
 
 const cardProjects = (props: {
   srcc: string;
+  imageTablet: string;
+  imageMoble: string;
   alt: string;
   titulo: string;
   tituloSecond: string;
   href: string;
 }) => {
+  /*
+   */
   return (
     <S.imageProjects data-aos="zoom-in">
-      <img
-        width="500px"
-        height="100%"
-        src={props.srcc || undefined}
-        alt={props.alt || undefined}
-      />
+      <S.imageResponsive>
+        <source
+          media="(max-width: 425px)"
+          srcSet={`${props.imageMoble}`}
+          type="image/png"
+        />
+
+        <source
+          media="(max-width: 1115px)"
+          srcSet={`${props.imageTablet}`}
+          type="image/png"
+        />
+        <img src={props.srcc || undefined} alt={props.alt || undefined} />
+      </S.imageResponsive>
 
       <S.informationProjects>
         <S.images__links>

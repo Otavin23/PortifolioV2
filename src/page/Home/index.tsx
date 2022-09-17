@@ -33,8 +33,6 @@ import article from "../../assets/image__projects/article.webp";
 import challenge from "../../assets/image__projects/chall.webp";
 import Cardp from "../../Components/cardProjects";
 
-import polygon from "../../assets/Polygon.webp";
-
 const Home = () => {
   useEffect(() => {
     Aos.init({
@@ -191,63 +189,18 @@ const Home = () => {
             <S.skillsNav>
               <span>habilidades</span>
               <ul>
-                <li>
-                  <picture>
-                    <img src={polygon} alt="polygon" />
-                  </picture>
-                  html
-                </li>
+                <li>html</li>
 
-                <li>
-                  <picture>
-                    <img src={polygon} alt="polygon" />
-                  </picture>
-                  css
-                </li>
+                <li>css</li>
 
-                <li>
-                  <picture>
-                    <img src={polygon} alt="polygon" />
-                  </picture>
-                  scss
-                </li>
+                <li>scss</li>
 
-                <li>
-                  <picture>
-                    <img src={polygon} alt="polygon" />
-                  </picture>
-                  javascript
-                </li>
-                <li>
-                  <picture>
-                    <img src={polygon} alt="polygon" />
-                  </picture>
-                  react.js
-                </li>
-                <li>
-                  <picture>
-                    <img src={polygon} alt="polygon" />
-                  </picture>
-                  styled-components
-                </li>
-                <li>
-                  <picture>
-                    <img src={polygon} alt="polygon" />
-                  </picture>
-                  typescript
-                </li>
-                <li>
-                  <picture>
-                    <img src={polygon} alt="polygon" />
-                  </picture>
-                  next.js
-                </li>
-                <li>
-                  <picture>
-                    <img src={polygon} alt="polygon" />
-                  </picture>
-                  figma
-                </li>
+                <li>javascript</li>
+                <li>react.js</li>
+                <li>styled-components</li>
+                <li>typescript</li>
+                <li>next.js</li>
+                <li>figma</li>
               </ul>
             </S.skillsNav>
           </S.skillNames>

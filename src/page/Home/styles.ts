@@ -191,7 +191,6 @@ export const skillsNav = styled.nav`
   }
   ul {
     margin: 2.5rem 0 0 0;
-    list-style: none;
     font-family: "Fira Code";
     font-style: normal;
     font-weight: 450;

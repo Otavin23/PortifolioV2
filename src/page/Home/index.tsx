@@ -34,9 +34,6 @@ import challenge from "../../assets/image__projects/chall.webp";
 import Cardp from "../../Components/cardProjects";
 
 import polygon from "../../assets/Polygon.webp";
-import burguerDesktop from "../../assets/brchallenger/brchallengDesktop.png";
-import burguerTablet from "../../assets/brchallenger/brchallengTablet.png";
-import burguerMobile from "../../assets/brchallenger/brchallengMobile.png";
 
 const Home = () => {
   useEffect(() => {
@@ -98,15 +95,83 @@ const Home = () => {
 
           <S.cardImageProjects>
             <Cardp
-              srcc={`${burguerDesktop}`}
-              imageTablet={`${burguerTablet}`}
-              imageMoble={`${burguerMobile}`}
+              srcc={`${challenge}`}
               alt={"imagem de um projeto de um site de hamburguer"}
               titulo={"Landing page empire burguer"}
               tituloSecond={
                 "burguer empire, desafio feito para colocar em provas as tech aprendida ao longo do tempo."
               }
               href={"https://br-challenges-empire-burger.vercel.app/"}
+            />
+
+            <Cardp
+              srcc={`${landinPage}`}
+              alt={"image of a fast delivery landing page"}
+              titulo={"Landing page logis"}
+              tituloSecond={
+                "landing-page bem completa, seu parceiro de entrega rapida e relampago desafio."
+              }
+              href={"https://logist-fast-delivery-landing-page.vercel.app/"}
+            />
+
+            <Cardp
+              srcc={`${gerenciamento}`}
+              alt={
+                "financial management landing page based on a designer provided by figma"
+              }
+              titulo={"Landing page shark finances"}
+              tituloSecond={
+                "landing-page de gerenciamento financeiro, designer fornecido pelo figma usei como base."
+              }
+              href={"https://gerenciamento-financeiro-landing-page.vercel.app/"}
+            />
+
+            <Cardp
+              srcc={`${calculadora}`}
+              alt={"image of a calculator"}
+              titulo={"Calculadora"}
+              tituloSecond={
+                "calculadora bem pratica, desafio do front-end mentor"
+              }
+              href={"https://tiny-sopapillas-c14523.netlify.app/"}
+            />
+
+            <Cardp
+              srcc={`${githubSearch}`}
+              alt={"desafio feito para achar pessoas do github pelo nome"}
+              titulo={"Encontre usuarios"}
+              tituloSecond={
+                "desafio feito para achar pessoas do github pelo nome, usando api fornecida pelo github"
+              }
+              href={"https://eloquent-johnson-973322.netlify.app/"}
+            />
+
+            <Cardp
+              srcc={`${todoList}`}
+              alt={"image task management"}
+              titulo={"Gerenciador de tarefas"}
+              tituloSecond={"gerenciador de tarefa, diaria todo-list"}
+              href={"https://fervent-yalow-13b8a0.netlify.app/"}
+            />
+
+            <Cardp
+              srcc={`${interativo}`}
+              alt={"image of text with several buttons"}
+              titulo={"Interativo"}
+              tituloSecond={
+                "a cada clique no numero ele vai interagir com o botão e levar para um modal de baixo desse que esta oculto"
+              }
+              href={"https://interactive-rating-component-tan-six.vercel.app/"}
+            />
+
+            <Cardp
+              srcc={`${restContries}`}
+              alt={"image of a website to locate the country and learn more"}
+              titulo={"procura pais"}
+              tituloSecond={
+                "procura pais e fornece infomações do pais desejado, precisa de ajustes"
+              }
+              href={"https://eager-poincare-e5ad84.netlify.app/"}
             />
           </S.cardImageProjects>
         </S.containerSkills>

@@ -9,8 +9,13 @@ export const imageProjects = styled.div`
   background: var(--backgrounProject);
 
   img {
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: bottom;
   }
+
   @media (max-width: 1115px) {
     flex-wrap: wrap;
     height: 0%;
@@ -47,20 +52,6 @@ export const images__nav = styled.picture`
     margin: 0 1rem 0 0;
   }
   @media (max-width: 1115px) {
-  }
-`;
-
-export const imageResponsive = styled.picture`
-  height: 100%;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-  @media (max-width: 1115px) {
-    width: 100%;
-    img {
-      width: 100%;
-    }
   }
 `;
 
